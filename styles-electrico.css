@@ -70,6 +70,32 @@
   display: block;
 }
 
+/* ---- Image Gallery Row ---- */
+.gallery-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 48px;
+}
+
+.gallery-item {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
 /* ---- Benefits Grid (6 cards, 3x2) ---- */
 .benefits-grid {
   display: grid;
@@ -316,6 +342,10 @@
 
 /* Tablet */
 @media (max-width: 1024px) {
+  .gallery-row {
+    gap: 16px;
+  }
+
   .benefits-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -327,6 +357,11 @@
 
 /* Mobile */
 @media (max-width: 768px) {
+  .gallery-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
   .benefits-grid {
     grid-template-columns: 1fr;
   }
