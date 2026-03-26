@@ -3,6 +3,66 @@
    Estilos adicionales para landing page de servicio
    ============================================ */
 
+/* ---- Form Wrappers Light Background ---- */
+.hero-form-wrap,
+.cta-form-wrap {
+  background: rgba(240, 240, 240, 0.95) !important;
+  border-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+.hero-form-wrap .hero-form-title {
+  color: #1A1A1A;
+}
+
+.hero-form-wrap .hero-form-subtitle {
+  color: #555;
+}
+
+.hero-form-wrap .form-group label,
+.cta-form-wrap .form-group label {
+  color: #333;
+}
+
+.hero-form-wrap .form-group input,
+.hero-form-wrap .form-group select,
+.hero-form-wrap .form-group textarea,
+.cta-form-wrap .form-group input,
+.cta-form-wrap .form-group select,
+.cta-form-wrap .form-group textarea {
+  background: #FFFFFF;
+  border-color: rgba(0, 0, 0, 0.12);
+  color: #1A1A1A;
+}
+
+.hero-form-wrap .form-group input::placeholder,
+.hero-form-wrap .form-group textarea::placeholder,
+.cta-form-wrap .form-group input::placeholder,
+.cta-form-wrap .form-group textarea::placeholder {
+  color: #999;
+}
+
+.hero-form-wrap .form-group input:focus,
+.hero-form-wrap .form-group select:focus,
+.hero-form-wrap .form-group textarea:focus,
+.cta-form-wrap .form-group input:focus,
+.cta-form-wrap .form-group select:focus,
+.cta-form-wrap .form-group textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(228, 30, 38, 0.12);
+}
+
+.hero-form-wrap .form-group select,
+.cta-form-wrap .form-group select {
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23333' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+.hero-form-wrap .form-checkbox label,
+.cta-form-wrap .form-checkbox label,
+.hero-form-wrap .form-disclaimer,
+.cta-form-wrap .form-disclaimer {
+  color: #777;
+}
+
 /* ---- Nav Logo Image ---- */
 .nav-logo-img {
   height: 40px;
